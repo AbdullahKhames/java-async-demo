@@ -6,7 +6,8 @@ public class DogsResource {
     Random random = new Random();
     public Dog getDog1(){
         try {
-            Thread.sleep(random.nextInt(1, 100));
+//            Thread.sleep(random.nextInt(1, 100));
+            Thread.sleep(500);
         }catch (Exception ex){}
         return Dog.builder()
                 .id(1)
@@ -15,7 +16,8 @@ public class DogsResource {
     }
     public Dog getDog2(){
         try {
-            Thread.sleep(random.nextInt(1, 100));
+//            Thread.sleep(random.nextInt(1, 100));
+            Thread.sleep(500);
         }catch (Exception ex){}
         return Dog.builder()
                 .id(2)
@@ -24,7 +26,8 @@ public class DogsResource {
     }
     public Dog getDog3(){
         try {
-            Thread.sleep(random.nextInt(1, 100));
+//            Thread.sleep(random.nextInt(1, 100));
+            Thread.sleep(500);
         }catch (Exception ex){}
         return Dog.builder()
                 .id(3)
@@ -33,7 +36,8 @@ public class DogsResource {
     }
     public Dog getDog4(){
         try {
-            Thread.sleep(random.nextInt(1, 100));
+//            Thread.sleep(random.nextInt(1, 100));
+            Thread.sleep(500);
         }catch (Exception ex){}
         return Dog.builder()
                 .id(4)
@@ -42,7 +46,8 @@ public class DogsResource {
     }
     public Dog getDog5(){
         try {
-            Thread.sleep(random.nextInt(1, 100));
+//            Thread.sleep(random.nextInt(1, 100));
+            Thread.sleep(500);
         }catch (Exception ex){}
         return Dog.builder()
                 .id(5)

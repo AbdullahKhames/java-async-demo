@@ -18,7 +18,7 @@ public class ConcurrentDogGetter implements DogsGetter{
         Instant start = Instant.now();
 
         var futures = new ArrayList<Future<Dog>>();
-        try (ExecutorService executorService = Executors.newFixedThreadPool(5)){
+        try (ExecutorService executorService = Executors.newFixedThreadPool(8)){
              futures.add( executorService.submit(() -> dogsResource.getDog1()));
              futures.add( executorService.submit(() -> dogsResource.getDog2()));
              futures.add( executorService.submit(() -> dogsResource.getDog3()));
